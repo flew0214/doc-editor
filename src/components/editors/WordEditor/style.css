@@ -1,0 +1,131 @@
+.word-editor {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.word-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.word-toolbar .toolbar-group {
+  display: flex;
+  gap: 2px;
+}
+
+.word-toolbar .toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+  margin: 0 4px;
+}
+
+.word-toolbar button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-toolbar button:hover {
+  background: #f0f0f0;
+  border-color: #3498db;
+}
+
+.word-toolbar select {
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.word-toolbar input[type="color"] {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.word-content {
+  flex: 1;
+  padding: 40px 60px;
+  overflow-y: auto;
+  background: white;
+  min-height: 500px;
+  font-size: 14px;
+  line-height: 1.8;
+  outline: none;
+}
+
+.word-content:focus {
+  box-shadow: inset 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.word-content h1 {
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+.word-content h2 {
+  font-size: 24px;
+  margin: 18px 0 8px;
+}
+
+.word-content h3 {
+  font-size: 20px;
+  margin: 16px 0 6px;
+}
+
+.word-content h4 {
+  font-size: 16px;
+  margin: 14px 0 4px;
+}
+
+.word-content p {
+  margin: 10px 0;
+}
+
+.word-content blockquote {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-left: 4px solid #3498db;
+  background: #f8f9fa;
+}
+
+.word-content ul,
+.word-content ol {
+  margin: 10px 0;
+  padding-left: 30px;
+}
+
+.word-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.word-content a {
+  color: #3498db;
+}
+
+.word-content hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e8e8e8;
+}

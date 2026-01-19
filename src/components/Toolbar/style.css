@@ -1,0 +1,58 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 5px;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: #e8e8e8;
+  margin: 0 5px;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-btn.primary {
+  background: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.toolbar-btn.primary:hover:not(:disabled) {
+  background: #2980b9;
+  border-color: #2980b9;
+  color: white;
+}

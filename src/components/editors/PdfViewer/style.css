@@ -1,0 +1,133 @@
+.pdf-viewer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #525659;
+}
+
+.pdf-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 12px 20px;
+  background: #323639;
+  flex-shrink: 0;
+}
+
+.pdf-toolbar .toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-toolbar button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #4a4d50;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.pdf-toolbar button:hover:not(:disabled) {
+  background: #5a5d60;
+}
+
+.pdf-toolbar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info,
+.zoom-info {
+  color: white;
+  font-size: 14px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.page-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+.page-input {
+  width: 60px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pdf-container {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.pdf-canvas-wrapper {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.pdf-canvas {
+  display: block;
+}
+
+.pdf-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  height: 100%;
+}
+
+.pdf-loading .spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.pdf-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.pdf-error .error-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pdf-error p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.pdf-error .error-hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
